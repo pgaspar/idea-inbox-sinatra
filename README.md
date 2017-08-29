@@ -8,11 +8,12 @@ It serves as an example application for people to try out new languages and fram
 
 At its simplest, the app consists of a input box users can use to submit new ideas and a list of submitted ideas. Ideas can additionally be voted up or down (preferably through Ajax, if building a web app), and the list should be ordered by vote score.
 
+<img src="media/idea-inbox-prompt.png" width="49%" alt="prompt-screen"></img>
+<img src="media/idea-inbox-list.png" width="49%" alt="list-screen"></img>
+
 The app should also have an authenticated admin section that lists all submitted ideas and allows admins to delete entries. Here the list should be paginated and ideally sortable by either vote score or submission date.
 
-<img src="media/idea-inbox-prompt.png" width="30%"></img>
-<img src="media/idea-inbox-list.png" width="30%"></img>
-<img src="media/idea-inbox-admin.png" width="30%"></img>
+![admin-screen](media/idea-inbox-admin.png)
 
 The thing I like about playing with an app like this is that it's very open ended. You'll find yourself with a lot of ideas on how to improve the app and make it more complex, giving you a reason to continue exploring your new environment.
 
