@@ -10,6 +10,10 @@ At its simplest, the app consists of a input box users can use to submit new ide
 
 The app should also have an authenticated admin section that lists all submitted ideas and allows admins to delete entries. Here the list should be paginated and ideally sortable by either vote score or submission date.
 
+<img src="media/idea-inbox-prompt.png" width="30%"></img>
+<img src="media/idea-inbox-list.png" width="30%"></img>
+<img src="media/idea-inbox-admin.png" width="30%"></img>
+
 The thing I like about playing with an app like this is that it's very open ended. You'll find yourself with a lot of ideas on how to improve the app and make it more complex, giving you a reason to continue exploring your new environment.
 
 Here's some ideas:
