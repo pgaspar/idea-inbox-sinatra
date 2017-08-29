@@ -1,6 +1,6 @@
-# Idea Inbox 📬 -- Sinatra edition
+# Idea Inbox 📬 - Sinatra edition
 
-Idea Inbox 📬 is a simple example web app that prompts the user for ideas around a topic and allows them to add their own idea and vote in previously suggested ideas.
+Idea Inbox is a simple example web app that prompts the user for ideas around a topic and allows them to add their own idea and vote in previously suggested ideas.
 
 It serves as an example application for people to try out new languages and frameworks.
 
@@ -25,7 +25,7 @@ Here's some ideas:
 
 ## Sinatra edition stack
 
-This Idea Inbox 📬 edition is built on Sinatra. This was actually the first version, since the project was originally based on oquefaltaemcoimbra.pt (pgaspar/oqfc) which was also built in Sinatra some years ago.
+This Idea Inbox edition is built on Sinatra. This was actually the first version, since the project was originally based on [oquefaltaemcoimbra.pt](http://oquefaltaemcoimbra.pt) ([pgaspar/oqfc](https://github.com/pgaspar/oqfc)) which was also built in Sinatra some years ago.
 
 * Ruby 2.3.1
 * Sinatra 2.0.0
@@ -35,7 +35,7 @@ This Idea Inbox 📬 edition is built on Sinatra. This was actually the first ve
 
 ## Contributing
 
-I'm still discovering Idea Inbox 📬 and I'd be very excited to do it with other people!
+I'm still discovering Idea Inbox and I'd be very excited to do it with other people!
 
 I'll be pushing a few other implementations soon(ish) as I explore other technologies, but please share your implementations as well!
 
@@ -43,6 +43,6 @@ Comments, suggestions, other implementations, etc. will be very welcome.
 
 ## Acknowledgments
 
-Idea Inbox 📬 is based on oquefaltaemcoimbra.pt (pgaspar/oqfc), the work of a few Coimbra residents on the look for ideas of how to improve their city.
+Idea Inbox 📬 is based on [oquefaltaemcoimbra.pt](http://oquefaltaemcoimbra.pt) ([pgaspar/oqfc](https://github.com/pgaspar/oqfc)), the work of a few Coimbra residents on the look for ideas of how to improve their city.
 
-The idea of building the same app using multiple languages / frameworks comes from various other projects, like TodoMVC.
+The idea of building the same app using multiple languages / frameworks comes from various other projects, like [TodoMVC](https://github.com/tastejs/todomvc).
