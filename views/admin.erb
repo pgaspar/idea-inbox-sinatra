@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Meta Tags -->
+    <title>Idea Inbox - Admin</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/admin.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <!-- JavaScript -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <a href="/admin"><h1>Idea Inbox 📬</h1></a>
+
+    <table class="table table-condensed table-hover">
+      <thead>
+        <tr>
+          <th><a href="/admin?order=text">Idea</a></th>
+          <th><a href="/admin?order=vote_score">Vote Score</a></th>
+          <th><a href="/admin?order=up_vote_count">Up Votes</a></th>
+          <th><a href="/admin?order=down_vote_count">Down Votes</a></th>
+          <th><a href="/admin?order=vote_count"># Votes</a></th>
+          <th><a href="/admin?order=created_at">Created_at</a></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for entry in @entries %>
+          <tr>
+            <td><%= entry.text %></td>
+            <td><%= entry.vote_score %></td>
+            <td><%= entry.up_vote_count %></td>
+            <td><%= entry.down_vote_count %></td>
+            <td><%= entry.vote_count %></td>
+            <td><%= entry.created_at %></td>
+            <td>
+              <form method="post" action="/admin/remove_entry">
+                <input type="hidden" name="entry_id" value="<%= entry.id %>" />
+                <input type="hidden" name="order" value="<%= params[:order] %>" />
+                <input type="hidden" name="page" value="<%= params[:page] %>" />
+                <input type="submit" value="Remove" onclick="return confirm('Are you sure?')" />
+               </form>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <%= @entries.pager.to_html("/admin?order=#{params[:order]}") %>
+  </body>
+</html>

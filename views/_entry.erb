@@ -1,0 +1,10 @@
+<tr id="entry-<%= entry.id %>">
+  <td class="entry-text"><h2><a href="/entry/<%= entry.id %>"><%= entry.text %></a></h2>
+    <p class="info-text">
+      <small>submitted on <%= entry.created_at.strftime("%d/%m/%Y") %></small>
+    </p>
+  </td>
+  <td class="entry-votes">
+    <%= partial(:vote_box, locals: { entry: entry }) %>
+  </td>
+</tr>

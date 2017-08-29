@@ -1,0 +1,20 @@
+<a href="/" class="btn btn-fixed">❮&nbsp;&nbsp;Other ideas</a>
+<div class="hero-unit">
+  <div class="hero-unit-outer">
+    <div class="hero-unit-inner">
+      <h1><a href="/"><%= settings.question %></a></h1>
+
+      <div id="entry" class="container">
+        <div id="entry-text">
+          <h2><%= @entry.text %></h2>
+          <% if @entry.created_at %>
+            <p><small>Submitted on <%= @entry.created_at.strftime("%d/%m/%Y") %></small></p>
+          <% end %>
+        </div>
+        <div id="entry-votes" class="entry-votes" data-vote-page="true">
+          <%= partial(:vote_box, locals: { entry: @entry }) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
